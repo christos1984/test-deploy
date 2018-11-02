@@ -1,9 +1,11 @@
 language: php
 php:
 - 7.1
-    apt:
-        packages:
-        - sshpass openssh-client
-        before_script:
-        - composer self-update
-        - composer install --prefer-source --no-interaction --dev
+addons:
+  ssh_known_hosts: 78.45.212.91
+  apt:
+    packages:
+    - sshpass openssh-client
+before_script:
+- composer self-update
+- composer install --prefer-source --no-interaction --dev
