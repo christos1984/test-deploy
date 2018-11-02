@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
-echo 'hi ' . getenv('INSTANCE');
+echo 'Hey hi ' . getenv('INSTANCE');
 
 // Create connection
 $conn = new mysqli(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PWD'), getenv('MYSQL_DB'));
