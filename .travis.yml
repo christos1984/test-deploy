@@ -16,6 +16,8 @@ script:
 deploy:
   provider: releases
   file: phinx.yml
+  api_key: 
+    secure: "sN5KLqKTdNuPZhddtjHPYWGa+AOz5V+A4qtBIe+tZ6JasxqnkhhDZ2wWK/C8WfEgNaFeFr4ca9/P3d2V8OkPJsvejnlfohxQmoIUxo+M88i8mozE9xgrMzkpclfSQQ6srEkclLTW3Bw5nFfqQHJSlSelPC4KC5kG9fWJ3DiNGotx3Jkt34idCm4PYNGxTOXnCNJLZNt4cn+6VPRTZFsSsC9kDvCQAOUS47xgZ/robF7ztlAHbsHHjaSqkqlgvKnbNT4X2YionvkdOhBTfO/lw8t+krTzIncmyD8+9RZfry69324jB2KrX0rT+sPm88gAkdk5uQDGXc+zyhsdpiXl7J/OV3MgfM5IEp9MdRbeBk2B3C7FHH+oR9pukTd8QAKvfVNhGTdrz51GahgRNvCUycVhNOKf3tlWF3Ggh69LK4GKV2wgDq8NnHxMm52Q72dO2GdgAKttx3+0zA6FxS7MdtP8QyjuUHSnk3mSbw58oZY7Yo10/QS6soq/CZ7uKsvGxL6B2BkbhEOfP+GT+e7NLLUS4LkbLxU9e4AKGL1hixx8z5NvajAoh7pM8iwbZQTPNTsOMSko6g8+LSh0oIlaElSqU7D/9zka+tBNqfNuPlSB3AQxgL3xSebC6YiEqA0bxHTAYJSz9J/NQlD80kRZaewOBoIXwlrFZykOcXx3W4Y="
   skip_cleanup: true
   on:
     tags: false
